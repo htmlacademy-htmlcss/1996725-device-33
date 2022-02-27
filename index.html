@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="background">
     <header class="page-header">
-      <img class="logo" src="" alt="Логотип интернет-магазина Device">
+      <img class="logo" src="images/logo.svg" width="145" height="36" alt="Логотип интернет-магазина Device">
 <nav class="navigation">
   <ul class="navigation-user">
     <li class="navigation-item-first-nav">
@@ -28,16 +30,16 @@
   </ul>
   <ul class="navigation-list">
     <li class="navigation-item">
-      <a class="navigation-link" href="#">Каталог товаров</a>
+      <a class="navigation-link menu" href="#">Каталог товаров</a>
     </li>
     <li class="navigation-item">
-      <a class="navigation-link" href="#">Доставка</a>
+      <a class="navigation-link menu" href="#">Доставка</a>
     </li>
     <li class="navigation-item">
-      <a class="navigation-link" href="#">Гарантия</a>
+      <a class="navigation-link menu" href="#">Гарантия</a>
     </li>
     <li class="navigation-item">
-      <a class="navigation-link" href="#">Контакты</a>
+      <a class="navigation-link menu" href="#">Контакты</a>
     </li>
   </ul>
 </nav>
@@ -46,7 +48,7 @@
 <h1 class="visually-hidden">Интернет-магазин Device</h1>
 <article class="first-banner">
   <section class="first-banner-gallery">
-    <img class="slider-img" src="" alt="Дрон модель 123" width="560" height="560">
+    <img class="slider-img" src="images/copter.png" alt="Дрон" width="560" height="560">
     <button class="slider-button slider-prev" type="button">
       <span class="visually-hidden">Предыдущее фото</span>
     </button>
@@ -109,31 +111,33 @@
 <article class="tag-cloud">
 <ul class="tag-cloud-list">
 <li class="tag-cloud-item">
-  <p><a href="virtualnaya-realnost.html">Виртуальная реальность</a></p>
+  <p><a class="tag-cloud-item-link" href="virtualnaya-realnost.html">Виртуальная реальность</a></p>
   <img src="" alt="Очки виртуальной реальности">
 </li>
 <li class="tag-cloud-item">
-  <p><a href="monopody.html">Моноподы для селфи</a></p>
+  <p><a class="tag-cloud-item-link" href="monopody.html">Моноподы для селфи</a></p>
   <img src="" alt="Моноподы для селфи">
 </li>
 <li class="tag-cloud-item">
-  <p><a href="ekshn-kamery.html">Экшн-камеры</a></p>
+  <p><a class="tag-cloud-item-link" href="ekshn-kamery.html">Экшн-камеры</a></p>
   <img src="" alt="Экшн-камеры">
 </li>
 <li class="tag-cloud-item">
-  <p><a href="fitness-braslety.html">Фитнес-браслеты</a></p>
+  <p><a class="tag-cloud-item-link" href="fitness-braslety.html">Фитнес-браслеты</a></p>
   <img src="" alt="Фитнес-браслеты">
 </li>
 <li class="tag-cloud-item">
-  <p><a href="umnie-chasy.html">Умные часы</a></p>
+  <p><a class="tag-cloud-item-link" href="umnie-chasy.html">Умные часы</a></p>
   <img src="" alt="Умные часы">
 </li>
 <li class="tag-cloud-item">
-  <p><a href="kvadrokoptery.html">Квадрокоптеры</a></p>
+  <p><a class="tag-cloud-item-link" href="kvadrokoptery.html">Квадрокоптеры</a></p>
   <img src="" alt="Квадрокоптеры">
 </li>
 </ul>
 </article>
+</main>
+</div>
 <section class="advantages">
   <ul class="advantages-list">
     <li class="advantages-list-item colored">Доставка</li>
@@ -154,6 +158,7 @@
     <p>Текст для кредита</p>
   </div>
 </section>
+<div class="background">
 <div class="delivery">
   <p class="delivery-option">Доставим редкий товар под заказ</p>
 </div>
@@ -178,6 +183,7 @@
 <button class="item-link" type="button">Напишите нам</button>
 </section>
 <section class="mailing-list">
+</div>
   <h2>Подпишитесь на рассылку</h2>
   <form class="mailing-list-form" action="https://echo.htmlacademy.ru/" method="post">
     <input type="text" name="mailing-list-email" placeholder="Ваш e-mail">
@@ -187,7 +193,7 @@
 <p class="mailing-list-text-free">Это бесплатно</p>
 </section>
 <footer class="page-footer">
-<img class="footer-logo" src="" alt="Логотип интернет-магазина Device">
+<img class="footer-logo" src="images/footer-logo.svg" width="145" height="36" alt="Логотип интернет-магазина Device">
 <p class="footer-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
 <ul class="footer-nav-list">
   <li class="footer-menu-item">Доставка</li>
@@ -213,7 +219,7 @@
   </li>
 </ul>
 <a class="html-academy-link" href="https://htmlacademy.ru/">
-<img src="" class="html-academy-logo" alt="Логотип HTML Академии">
+<img src="images/html-logo.svg" width="115" height="33" class="html-academy-logo" alt="Логотип HTML Академии">
 </a>
 </footer>
     </main>
