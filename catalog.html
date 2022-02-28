@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+      <div class="background">
     <header class="page-header">
         <a class="navigation-logo" href="index.html">
         <img class="logo" src="images/logo.svg" width="145" height="36" alt="Логотип интернет-магазина Device">
@@ -47,7 +48,7 @@
       </header>
       <main class="main-inner">
           <header class="inner-header">
-              <h1 class="inner-header-title">Моноподы для селфи</h1>
+              <h1 class="inner-header-title main-title">Моноподы для селфи</h1>
           </header>
           <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
@@ -60,10 +61,15 @@
                 <a class="breadcrumbs-link">Моноподы для селфи</a>
             </li>
           </ul>
+        </div>
           <section class="catalog-products">
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+          <p class="filter">Фильтр:</p>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <button class="button" type="submit">Показать</button>
+            <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость</legend>
+                <input type="range" min="0" max="10000" step="1000" value="5000">
+            </fieldset>
             <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Цвет</legend>
                 <ul class="catalog-filter-list">
@@ -107,8 +113,12 @@
                 </label>
             </li>
         </ul>
+
+        
             </fieldset>
+            <button class="button filter-button" type="submit">Показать</button>
         </form>
+        <p class="filter">Сортировка:</p>
         <select class="select-control" aria-label="Сортировка">
             <option value="popular">Популярные</option>
             <option value="expensive">Дорогие</option>
@@ -165,8 +175,8 @@
 <button class="show-more">Загрузить еще</button>
 <ul class="pagination">
     <li class="pagination-list">
-        <a href="#" class="pagination-link pagination-prev pagination-disabled">
-            <span class="visually-hidden">Назад</span>
+        <a href="#" class="pagination-prev pagination-disabled">
+            <span class="pagination-button">Назад</span>
         </a>
     </li>
     <li class="pagination-list">
@@ -215,8 +225,8 @@
         <a href="#" class="pagination-link">15</a>
     </li>
     <li class="pagination-list">
-        <a href="#" class="pagination-link pagination-next">
-            <span class="visually-hidden">Вперед</span>
+        <a href="#" class="pagination-next">
+            <span class="pagination-button">Вперед</span>
         </a>
     </li>
 </ul>
